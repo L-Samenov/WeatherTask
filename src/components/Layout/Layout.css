@@ -1,0 +1,9 @@
+.layout {
+    text-align: center;
+    margin:50px 0 50px 0;
+  }
+
+  .row {
+    justify-content: center;
+    margin: 15px 0;
+  }
