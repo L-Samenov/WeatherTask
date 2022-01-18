@@ -3,14 +3,14 @@ import moment from 'moment';
 export const findNextMidnightIndex = (arrWeather) => {
     return arrWeather.findIndex(({dt}) => {
         let strDate = moment(dt*1000).format("hh:mm a");
-        return strDate == '12:00 am';
+        return strDate == '11:00 am';
     });
 }
 
 export const filtered = (arrWeather, index) => {
     return arrWeather.slice(index).filter(({dt}) => {
         let str = moment(dt*1000).format("hh:mm a");
-        return str == '12:00 pm';
+        return str == '11:00 pm';
     });
 }
 
